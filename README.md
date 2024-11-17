@@ -1,6 +1,39 @@
-# Xstate Quiz App
-[VIEW APP](https://xstate-quiz-app-git-main-hsndmr.vercel.app/)
-- This is a quiz app built with xstate and react. It is a simple quiz app that has 10 questions and the user can choose one of the 4 options for each question. The user can also go back to the previous question and change their answer. End of the quiz, the user can see their score and can restart the quiz.
-- The project aim is to show how to use xstate with react and how to use xstate to manage state in a React app.
+# Projet Landing page NCP
 
-![Screenshot](screenshot.png)
+![Landing page NCP](image.png)
+
+## Description
+Questionnaire sur le niveau de connaissance en finance personnel avec proposition de rendez-vous pour un entretien personnalisé.
+
+## Développement
+### Prérequis
+- Node.js
+- npm
+- Next.js
+- Swiper.js
+- Material-UI
+- Calendy
+- Google API
+
+### To do list
+#### Style
+- [ ] changer la police pour les textes lato
+- [ ] changer la police pour les titres Avenir standard
+- [ ] changer la couleur des polices par le blue nuit #0c1629
+- [ ] ajuster le responsive du header comme sur la maquette
+- [ ] Diminuer les marges du questionnaire
+- [ ] Diminuer la marge entre la progressbar et la question
+- [ ] Ajouter de la marge entre la question et les réponses
+- [ ] Modifier la page de fin de questionnaire comme sur la maquette
+- [ ] Faire la page de prise de rendez-vous avec Calendy
+
+#### Logique
+- [ ] Voir comment intégrer Calendy dans la page de prise de rendez-vous
+- [ ] Mettre en place la logique pour l'affichage de la page RDV si 2 réponses sont "d"
+
+#### Google API
+- [ ] Implémenter les système d'envoi de mail avec Google API
+- [ ] Implémenter les système de remplissage du Google Sheet avec Google API
+
+#### Déployement
+- [ ] Mettre en ligne le site sur Vercel

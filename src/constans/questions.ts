@@ -6,8 +6,8 @@ export const questions: IQuestion[] = [
     question:
       '1. Quels sont vos objectifs principaux grâce à l’investissement ?',
     answers: [
-      { id: 1, answer: 'Générer des revenus complémentaires' },
-      { id: 2, answer: 'Préparer une retraite confortable' },
+      { id: 1, answer: 'Générer des revenus complémentaires.' },
+      { id: 2, answer: 'Préparer une retraite confortable.' },
       {
         id: 3,
         answer: 'Sécuriser mon épargne contre l’inflation et les aléas.',
@@ -15,7 +15,6 @@ export const questions: IQuestion[] = [
       {
         id: 4,
         answer: 'Réaliser un projet (achat, voyage, etc…)',
-        isCorrect: true,
       },
     ],
   },
@@ -27,21 +26,21 @@ export const questions: IQuestion[] = [
       {
         id: 1,
         answer:
-          'Un risque faible, même si cela signifie un rendement plus modeste',
+          'Un risque faible, même si cela signifie un rendement plus modeste.',
       },
       {
         id: 2,
-        answer: 'Un risque modéré, pour obtenir un rendement à moyen terme',
+        answer: 'Un risque modéré, pour obtenir un rendement à moyen terme.',
       },
       {
         id: 3,
         answer:
-          'Ouvert au risque, si cela peut maximiser mon rendement sur le long terme',
+          'Ouvert au risque, si cela peut maximiser mon rendement sur le long terme.',
       },
       {
         id: 4,
         answer:
-          'Je ne sais pas encore, j’aimerais être guidé dans cette décision',
+          'Je ne sais pas encore, j’aimerais être guidé dans cette décision.',
         isCorrect: true,
       },
     ],
@@ -68,17 +67,17 @@ export const questions: IQuestion[] = [
       {
         id: 1,
         answer:
-          'Moins de 1 an – je cherche un rendement rapide même s’il est modeste',
+          'Moins de 1 an – je cherche un rendement rapide même s’il est modeste.',
       },
       {
         id: 2,
         answer:
-          '1 à 5 ans – je suis prêt à attendre un peu pour obtenir de meilleurs rendements',
+          '1 à 5 ans – je suis prêt à attendre un peu pour obtenir de meilleurs rendements.',
       },
       {
         id: 3,
         answer:
-          'Plus de 5 ans - je planifie sur le long terme pour construire un capital solide',
+          'Plus de 5 ans - je planifie sur le long terme pour construire un capital solide.',
       },
       {
         id: 4,
@@ -108,7 +107,7 @@ export const questions: IQuestion[] = [
       {
         id: 4,
         answer:
-          'J’aimerai en savoir plus sur les stratégies adaptées à mon profil.',
+          'J’aimerais en savoir plus sur les stratégies adaptées à mon profil.',
         isCorrect: true,
       },
     ],

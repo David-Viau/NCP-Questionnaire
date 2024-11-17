@@ -36,7 +36,7 @@ const Quiz = () => {
     state.context;
 
   // Calcul de la progression en pourcentage
-  const progress = ((currentQuestionIndex + 1) / questions.length) * 100;
+  const progress = (currentQuestionIndex / questions.length) * 100;
 
   const renderQuestions = () => {
     return (

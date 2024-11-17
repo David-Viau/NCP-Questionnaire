@@ -22,7 +22,10 @@ const Footer = () => {
       <p style={{ color: '#0c1629' }}>
         Tous droits réservés © Cabinet NCP {new Date().getFullYear()}
       </p>
-      <Button href="/" style={footerButtonStyle}>
+      <Button
+        href="https://notreconseillerpatrimonial.com/politique-de-confidentialite"
+        style={footerButtonStyle}
+      >
         Politique de confidentialités
       </Button>
     </footer>

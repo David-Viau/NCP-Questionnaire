@@ -25,7 +25,11 @@ const Header = () => {
         <Image src="/logo-NCP.png" alt="Logo NCP" width={180} height={90} />
       </span>
       <nav>
-        <Button variant="contained" style={buttonStyle}>
+        <Button
+          variant="contained"
+          style={buttonStyle}
+          href="https://calendly.com/conseiller-patrimonial-ncp/audit-patrimonial-offert"
+        >
           Prendre RDV
         </Button>
       </nav>

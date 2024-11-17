@@ -1,4 +1,4 @@
-import { Button, TextField, Box, MenuItem } from '@mui/material';
+import { Button, TextField, Box, MenuItem, Typography } from '@mui/material';
 
 export default function FormPropsTextFields() {
   const buttonStyle = {
@@ -37,9 +37,9 @@ export default function FormPropsTextFields() {
           flexDirection: 'column',
         }}
       >
-        <TextField required id="outlined-age" label="Age" type="text" />
+        <TextField required id="outlined-name" label="Nom" type="text" />
+        <TextField required id="outlined-age" label="Email" type="email" />
         <TextField
-          required
           select
           id="outlined-exp"
           label="Expérience en investissement"
@@ -51,13 +51,15 @@ export default function FormPropsTextFields() {
             </MenuItem>
           ))}
         </TextField>
-        <TextField required id="outlined-name" label="Nom" type="text" />
         <TextField
           required
           id="outlined-phone"
           label="Numéro de téléphone"
           type="text"
         />
+        <Typography variant="body2" color="textSecondary">
+          Données protégées. Respect des lois RGPD.
+        </Typography>
       </div>
       <Button variant="contained" style={buttonStyle} type="submit">
         Envoyer
