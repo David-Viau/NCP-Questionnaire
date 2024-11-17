@@ -24,10 +24,10 @@ const Answer: React.FC<AnswerProps> = ({
         borderRadius: 4,
         width: 'auto',
         color: selected ? 'white' : 'black',
-        backgroundColor: selected ? 'primary.main' : 'white',
+        backgroundColor: selected ? '#11c77b' : 'grey.200',
         '&:hover': {
           cursor: 'pointer',
-          backgroundColor: 'primary.main',
+          backgroundColor: '#11c77b',
           color: 'white',
         },
       }}

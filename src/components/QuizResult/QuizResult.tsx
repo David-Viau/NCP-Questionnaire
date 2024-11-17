@@ -8,6 +8,7 @@ import {
 } from '@mui/material';
 import React from 'react';
 import { QuizResultProps } from '@/components/QuizResult/quiz-result.interface';
+import FormField from '../FormField/FormField';
 
 const QuizResult: React.FC<QuizResultProps> = ({
   countCorrectAnswers,
@@ -15,25 +16,30 @@ const QuizResult: React.FC<QuizResultProps> = ({
   onResetQuiz,
 }) => {
   return (
-    <Card>
-      <CardContent>
-        <Typography variant="h5">Quiz Results</Typography>
+    <Card style={{ boxShadow: 'none' }}>
+      <CardContent
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+        }}
+      >
+        <Typography variant="h5">
+          Merci d&apos;avoir répondu au questionnaire
+        </Typography>
         <Box
           sx={{
             marginTop: 2,
+            marginBottom: 2,
           }}
         >
-          <Typography color="green" fontWeight="bold" variant="body1">
-            Correct: {countCorrectAnswers}
-          </Typography>
-          <Typography color="red" fontWeight="bold" variant="body1">
-            Incorrect: {countQuestions - countCorrectAnswers}
-          </Typography>
+          <FormField />
         </Box>
       </CardContent>
-      <CardActions>
-        <Button onClick={onResetQuiz}>Reset Quiz</Button>
-      </CardActions>
+      <Button onClick={onResetQuiz}>Recommencer le questionnaire</Button>
+      <Typography color="green" fontWeight="bold" variant="body1">
+        Nombre de réponse &quot;d&quot; : {countCorrectAnswers}
+      </Typography>
     </Card>
   );
 };

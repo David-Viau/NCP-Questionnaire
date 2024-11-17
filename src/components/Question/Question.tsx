@@ -23,7 +23,6 @@ const Question: React.FC<QuestionProps> = ({ service }) => {
         elevation={0}
         sx={{
           padding: 2,
-          border: `1px solid #ccc`,
         }}
       >
         <CardContent>
@@ -56,6 +55,7 @@ const Question: React.FC<QuestionProps> = ({ service }) => {
           <Grid container justifyContent="space-between">
             <Grid item>
               <Button
+                style={{ color: '#11c77b' }}
                 sx={{
                   visibility:
                     prevQuestionIndex === undefined ? 'hidden' : 'visible',
@@ -65,18 +65,19 @@ const Question: React.FC<QuestionProps> = ({ service }) => {
                 }}
                 size="large"
               >
-                Prev
+                Précédente
               </Button>
             </Grid>
             <Grid item>
               <Button
+                style={{ color: '#11c77b' }}
                 disabled={!selectedAnswer}
                 onClick={() => {
                   send('NEXT');
                 }}
                 size="large"
               >
-                Next
+                Suivante
               </Button>
             </Grid>
           </Grid>

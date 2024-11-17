@@ -105,3 +105,22 @@ a {
     color-scheme: dark;
   }
 }
+
+.swiper-pagination .swiper-pagination-progressbar {
+  height: 20px;
+  border-radius: 20px;
+}
+
+.swiper-pagination .swiper-pagination-progressbar-fill {
+  background: #11c77b;
+  height: 20px;
+  border-radius: 20px;
+}
+
+swiper-pagination swiper-pagination-progressbar swiper-pagination-horizontal
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background-color: #11c77b;
+  height: 20px;
+  border-radius: 20px;
+}
