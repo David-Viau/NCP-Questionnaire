@@ -19,18 +19,14 @@ const Question: React.FC<QuestionProps> = ({ service }) => {
 
   return (
     <>
-      <Card
-        elevation={0}
-        sx={{
-          padding: 2,
-        }}
-      >
-        <CardContent>
+      <Card elevation={0}>
+        <CardContent sx={{ padding: 0 }}>
           <Typography
             variant="h5"
             fontWeight="500"
             color="text.primary"
             gutterBottom
+            sx={{ mb: 4, mt: 4 }}
           >
             {question}
           </Typography>

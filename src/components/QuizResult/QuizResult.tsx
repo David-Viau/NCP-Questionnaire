@@ -24,8 +24,11 @@ const QuizResult: React.FC<QuizResultProps> = ({
           alignItems: 'center',
         }}
       >
-        <Typography variant="h5">
-          Merci d&apos;avoir répondu au questionnaire
+        <Typography fontWeight={'bold'} variant="h5" sx={{ marginBottom: 2 }}>
+          Vos résultats à notre simulateur sont <u>prêts</u>.
+        </Typography>
+        <Typography fontSize={20} variant="body1" color="#11c77b">
+          Veuillez entrer vos informations pour les recevoir:
         </Typography>
         <Box
           sx={{
@@ -35,11 +38,11 @@ const QuizResult: React.FC<QuizResultProps> = ({
         >
           <FormField />
         </Box>
+        <Typography variant="body1" sx={{ textAlign: 'center' }}>
+          Déjà <b>1 237</b> résultats générés grâce à notre simulateur.
+        </Typography>
       </CardContent>
       <Button onClick={onResetQuiz}>Recommencer le questionnaire</Button>
-      <Typography color="green" fontWeight="bold" variant="body1">
-        Nombre de réponse &quot;d&quot; : {countCorrectAnswers}
-      </Typography>
     </Card>
   );
 };

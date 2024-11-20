@@ -21,11 +21,13 @@ Questionnaire sur le niveau de connaissance en finance personnel avec propositio
 - [ ] changer la police pour les titres Avenir standard
 - [ ] changer la couleur des polices par le blue nuit #0c1629
 - [ ] ajuster le responsive du header comme sur la maquette
-- [ ] Diminuer les marges du questionnaire
-- [ ] Diminuer la marge entre la progressbar et la question
-- [ ] Ajouter de la marge entre la question et les réponses
+- [x] Diminuer les marges du questionnaire
+- [x] Diminuer la marge entre la progressbar et la question
+- [x] Ajouter de la marge entre la question et les réponses
 - [ ] Modifier la page de fin de questionnaire comme sur la maquette
 - [ ] Faire la page de prise de rendez-vous avec Calendy
+- [ ] ajouter un faut départ de la progressbar
+- [ ] la progressbar doit finir à 100% à la fin du questionnaire
 
 #### Logique
 - [ ] Voir comment intégrer Calendy dans la page de prise de rendez-vous

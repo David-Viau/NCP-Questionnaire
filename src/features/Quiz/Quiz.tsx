@@ -36,7 +36,9 @@ const Quiz = () => {
     state.context;
 
   // Calcul de la progression en pourcentage
-  const progress = (currentQuestionIndex / questions.length) * 100;
+  const progress = state.matches('showingResults')
+    ? 100
+    : (currentQuestionIndex / questions.length) * 100;
 
   const renderQuestions = () => {
     return (
@@ -102,7 +104,7 @@ const Quiz = () => {
       marginX={'auto'}
     >
       {/* Progress Bar */}
-      <Box sx={{ position: 'relative', width: '100%', mb: 4 }}>
+      <Box sx={{ position: 'relative', width: '100%' }}>
         <LinearProgress
           variant="determinate"
           value={progress}
@@ -110,6 +112,9 @@ const Quiz = () => {
             height: 30,
             borderRadius: 15,
             backgroundColor: '#f0f0f0',
+            borderWidth: 1,
+            borderStyle: 'solid',
+            borderColor: 'grey.300',
             '& .MuiLinearProgress-bar': {
               backgroundColor: '#11c77b',
               borderRadius: 15,
@@ -117,6 +122,18 @@ const Quiz = () => {
           }}
         />
         {/* Pourcentage centré */}
+        <span
+          style={{
+            position: 'absolute',
+            top: '50%',
+            left: '15px',
+            transform: 'translate(-50%, -50%)',
+            width: 28,
+            height: 28,
+            backgroundColor: '#11c77b',
+            borderRadius: '50%',
+          }}
+        ></span>
         <Typography
           variant="body1"
           sx={{
