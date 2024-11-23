@@ -5,8 +5,13 @@ export default function FormPropsTextFields() {
     backgroundColor: '#11c77b',
     borderRadius: '20px',
     boxShadow: 'none',
-    padding: '10px 40px',
+    padding: '8px 20px',
     '&:hover': { backgroundColor: 'black' },
+    // Styles responsives pour le bouton
+    '@media (max-width: 600px)': {
+      padding: '6px 15px', // Plus petit padding en mode mobile
+      fontSize: '0.7rem', // Réduction de la taille de la police
+    },
   };
   const investExp = [
     {
@@ -61,7 +66,7 @@ export default function FormPropsTextFields() {
           Données protégées. Respect des lois RGPD.
         </Typography>
       </div>
-      <Button variant="contained" style={buttonStyle} type="submit">
+      <Button variant="contained" sx={buttonStyle} type="submit">
         Envoyer
       </Button>
     </Box>

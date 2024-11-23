@@ -26,8 +26,8 @@ Questionnaire sur le niveau de connaissance en finance personnel avec propositio
 - [x] Ajouter de la marge entre la question et les réponses
 - [ ] Modifier la page de fin de questionnaire comme sur la maquette
 - [ ] Faire la page de prise de rendez-vous avec Calendy
-- [ ] ajouter un faut départ de la progressbar
-- [ ] la progressbar doit finir à 100% à la fin du questionnaire
+- [x] ajouter un faut départ de la progressbar
+- [x] la progressbar doit finir à 100% à la fin du questionnaire
 
 #### Logique
 - [ ] Voir comment intégrer Calendy dans la page de prise de rendez-vous
